@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 function AppPro(): JSX.Element {
-    const isDarkMode = useColorScheme() === "dark"
+    const isDarkMode = useColorScheme() === "dark"  // setting up dark mode
     return (
         <View style={styles.container}>
             <Text style ={isDarkMode ? styles.whiteText: styles.blackText}>
@@ -16,12 +16,12 @@ function AppPro(): JSX.Element {
         </View>
     )
 }
-
+x
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        alignItems:'center',
-        justifyContent: 'center'
+        alignItems:'center',  // for left-to-right
+        justifyContent: 'center'    // for top-to-bottom
     },
     whiteText:{
         color: '#ffffff'
